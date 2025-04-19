@@ -1,0 +1,14 @@
+@import "../../../styles/variables/colors";
+
+.ui-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.dark-mode {
+  .ui-text {
+    color: $light-text;
+  }
+}

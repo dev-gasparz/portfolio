@@ -1,0 +1,82 @@
+header {
+  background-color: $header-bg;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1920px;
+  margin: 0px auto;
+  border-bottom: 1px solid $dark-primary-bg;
+
+  .menuLinks {
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+
+    a {
+      letter-spacing: 2px;
+    }
+
+    .menu-link {
+      font-family: "Nunito", sans-serif;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      color: $dark-primary-bg;
+      text-decoration: none;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  .changeTheme {
+    margin-right: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: $dark-primary-bg;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    box-shadow: none;
+    border: 1px solid $dark-primary-bg;
+
+    svg {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &:active {
+      transform: rotate(360deg);
+    }
+
+    svg:hover {
+      transform: scale(1.04);
+    }
+  }
+}
+
+.dark-mode {
+  header {
+    background-color: $dark-primary-bg;
+    color: $dark-primary-text;
+    border-bottom: 1px solid $light-bg;
+
+    .changeTheme {
+      background-color: $light-bg;
+    }
+  }
+
+  .menu-links {
+    button {
+      color: $dark-primary-text;
+    }
+
+    .menu-link {
+      color: $primary-bg;
+    }
+  }
+}
