@@ -1,11 +1,59 @@
 .stacks {
   background-color: $primary-bg;
-  height: 40vh;
+
+  .tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 1rem 1rem 0px;
+    max-width: 880px;
+    height: fit-content;
+
+    img {
+      height: 36px;
+      object-fit: contain;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    line-height: 120%;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+
+  .stacks-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .comet {
+    display: flex;
+    width: 100%;
+    max-width: 460px;
+  }
+}
+
+.stacks.container {
+  padding: 10vh 0px;
 }
 
 .dark-mode {
   .stacks {
     background-color: $dark-primary-bg;
     color: $dark-primary-text;
+  }
+
+  h2 {
+    color: #fff;
   }
 }
