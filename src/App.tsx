@@ -3,6 +3,7 @@ import "./styles/main.scss";
 import Header from "./components/Header";
 import { UiText } from "./components/ui/Text/Text";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Stacks from "./components/layouts/Stacks";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,13 +24,23 @@ function App() {
     <div className={darkMode ? "dark-mode" : "light-mode"}>
       <div className="app-container">
         <Header darkMode={darkMode} toggleTheme={toggleTheme} />
-        <section className="intro container">
-          <DotLottieReact
-            src="https://lottie.host/1a0f6ec9-8e75-44cd-83e6-a6275b01394c/KeYDJ6kx33.lottie"
-            loop
-            autoplay
-          />
-          <UiText text="Sou um desenvolvedor apaixonado por tecnologia. Especializo-me em criar soluções inovadoras que impulsionam o seu e-commerce." />
+        <section className="intro ">
+          <div className="intro-content container">
+            <div className="text-box">
+              <h2 className="title">Olá, Eu sou o Gaspar.</h2>
+              <UiText text="Sou um desenvolvedor apaixonado por tecnologia. Especializo-me em criar soluções inovadoras que impulsionam o seu e-commerce." />
+            </div>
+
+            <DotLottieReact
+              src="https://lottie.host/e4e7f27c-5c99-41dc-aa1a-d054738df6bc/x0RFvlGUS9.lottie"
+              loop
+              autoplay
+            />
+          </div>
+        </section>
+
+        <section className="stacks">
+          <Stacks />
         </section>
       </div>
     </div>

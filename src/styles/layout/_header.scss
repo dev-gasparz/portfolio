@@ -1,12 +1,11 @@
 header {
   background-color: $header-bg;
-  height: 80px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  max-width: 1920px;
+  max-width: 1500px;
   margin: 0px auto;
-  border-bottom: 1px solid $dark-primary-bg;
 
   .menuLinks {
     display: flex;
@@ -63,7 +62,6 @@ header {
   header {
     background-color: $dark-primary-bg;
     color: $dark-primary-text;
-    border-bottom: 1px solid $light-bg;
 
     .changeTheme {
       background-color: $light-bg;

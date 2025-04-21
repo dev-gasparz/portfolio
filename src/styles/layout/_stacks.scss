@@ -1,0 +1,11 @@
+.stacks {
+  background-color: $primary-bg;
+  height: 40vh;
+}
+
+.dark-mode {
+  .stacks {
+    background-color: $dark-primary-bg;
+    color: $dark-primary-text;
+  }
+}

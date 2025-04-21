@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "../../../styles/variables/colors";
 
 .ui-text {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 700;
-  color: #2b2b2b;
+  line-height: 30px;
+  font-weight: 400;
+  color: #1a1a1a99;
+  text-rendering: optimizeSpeed;
 }
 
 .dark-mode {
   .ui-text {
-    color: $light-text;
+    color: #ffffffde;
   }
 }
