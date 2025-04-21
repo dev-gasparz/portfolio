@@ -17,8 +17,6 @@ header {
     }
 
     .menu-link {
-      font-family: "Nunito", sans-serif;
-      font-size: 20px;
       line-height: 24px;
       font-weight: 700;
       color: $dark-primary-bg;
@@ -27,6 +25,13 @@ header {
       border: none;
       cursor: pointer;
       transition: 0.2s ease-in-out;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      color: #1a1a1a;
+      text-decoration: none;
     }
   }
 
@@ -37,23 +42,32 @@ header {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: $dark-primary-bg;
-    border-radius: 50%;
+    background-color: transparent;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease-in-out;
     box-shadow: none;
-    border: 1px solid $dark-primary-bg;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: rgb(238 240 245 / 81%);
+
+      svg {
+        fill: #000 !important;
+      }
+    }
 
     svg {
       transition: transform 0.2s ease-in-out;
-    }
 
-    &:active {
-      transform: rotate(360deg);
-    }
+      &:active {
+        transform: rotate(360deg);
+      }
 
-    svg:hover {
-      transform: scale(1.04);
+      svg:hover {
+        transform: scale(1.04);
+        fill: #fff;
+      }
     }
   }
 }
@@ -64,7 +78,9 @@ header {
     color: $dark-primary-text;
 
     .changeTheme {
-      background-color: $light-bg;
+      &:hover {
+        background-color: #2d2f36cc;
+      }
     }
   }
 

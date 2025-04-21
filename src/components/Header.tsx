@@ -28,9 +28,9 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleTheme }) => {
       </div>
       <button className="changeTheme" onClick={toggleTheme}>
         {darkMode ? (
-          <LightModeIcon width={24} height={24} fill="#181818" />
+          <DarkModeIcon width={24} height={24} fill="#ffffffee" />
         ) : (
-          <DarkModeIcon width={24} height={24} fill="#f4f4f4" />
+          <LightModeIcon width={24} height={24} fill="#2d2f36cc" />
         )}
       </button>
       <ContatoModal
