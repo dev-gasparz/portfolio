@@ -9,6 +9,7 @@ interface ProjectProps {
   projectHref?: string;
   gitHref: string;
   position: "toLeft" | "toRight";
+  stack: string[];
 }
 
 const Projects: React.FC<ProjectProps> = (props: ProjectProps) => {
@@ -25,9 +26,11 @@ const Projects: React.FC<ProjectProps> = (props: ProjectProps) => {
           </a>
           <p className="project-desc">{props.text}</p>
           <div className="project-stack">
-            <span>React.js</span>
-            <span>TypeScript</span>
-            <span>Sass</span>
+            <div className="project-stack">
+              {props.stack.map((tech, index) => (
+                <span key={index}>{tech}</span>
+              ))}
+            </div>
           </div>
           <div className="project-links">
             <a

@@ -56,6 +56,7 @@ function App() {
               gitHref="https://github.com/dev-gasparz/portfolio"
               projectHref="https://portfolio-tau-kohl-37.vercel.app/"
               position="toLeft"
+              stack={["React.js", "TypeScript", "SASS"]}
             />
           </div>
         </section>

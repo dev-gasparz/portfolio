@@ -116,13 +116,4 @@ header {
       color: $primary-bg;
     }
   }
-
-  .menuLinks {
-    a,
-    button {
-      &::after {
-        background-color: #ff8f00;
-      }
-    }
-  }
 }
