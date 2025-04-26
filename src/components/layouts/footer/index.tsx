@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <section className="footer">
       <div className="footer-content container">
         <p>Desenvolvido por Gabriel Gaspar</p>
-        <p>Construido com React, Typescript e muito café ☕</p>
+        <p>Construído com React, Typescript e muito café ☕</p>
       </div>
     </section>
   );

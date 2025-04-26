@@ -5,6 +5,7 @@ import githubWhite from "../../../assets/images/logos/GitHub_Logo_White.png";
 interface ProjectProps {
   title: string;
   text: string;
+  imgUrl: string;
   projectHref?: string;
   gitHref: string;
   position: "toLeft" | "toRight";
@@ -15,14 +16,11 @@ const Projects: React.FC<ProjectProps> = (props: ProjectProps) => {
     <section className="project container">
       <div className={`project-content ${props.position}`}>
         <div className="project-img">
-          <img
-            src="https://raw.githubusercontent.com/rameskum/ecommerce-admin/main/Admin%20Dashboard.jpeg"
-            alt=""
-          />
+          <img src={props.imgUrl} alt="" />
         </div>
 
         <div className="project-info">
-          <a className="project-slug" href={props.projectHref}>
+          <a className="project-slug" href={props.projectHref} target="_blank">
             <h3>{props.title}</h3>
           </a>
           <p className="project-desc">{props.text}</p>

@@ -6,6 +6,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Stacks from "./components/layouts/Stacks";
 import Projects from "./components/layouts/Projects";
 import Footer from "./components/layouts/footer";
+import projetoPortf from "./assets/images/projeto-portfolio.png";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -49,21 +50,11 @@ function App() {
           <h2>Meus projetos</h2>
           <div className="projects-gap">
             <Projects
-              title="Projeto número 1"
-              text="Desenvolvimento de uma loja virtual responsiva utilizando React e integração com VTEX. O foco do projeto foi a criação de uma interface fluida, com atenção especial a animações suaves e transições entre páginas. Incluí também um controle de carrinho com persistência de dados e um sistema de banners dinâmicos. O projeto destaca meu conhecimento em e-commerce e atenção aos detalhes de UI/UX."
+              imgUrl={projetoPortf}
+              title="Portfólio Pessoal"
+              text="Projeto desenvolvido com React, TypeScript e SASS, focado na apresentação dos meus trabalhos e habilidades como desenvolvedor front-end. Além de destacar animações suaves e responsividade, o portfólio foi pensado para refletir meu estilo de codar — com atenção aos detalhes, organização de componentes e uma experiência de navegação fluida. Todo o conteúdo é dinâmico e estruturado para ser facilmente escalável."
               gitHref="https://github.com/dev-gasparz/portfolio"
-              position="toLeft"
-            />
-            <Projects
-              title="Projeto número 2"
-              text="Projeto pessoal focado em experimentar animações com React e SASS. Desenvolvi uma landing page interativa com troca de tema (claro/escuro), transições entre seções e elementos com entrada animada baseados no scroll. Foi uma oportunidade para aprofundar conhecimentos em design de interfaces, usabilidade e microinterações visuais."
-              gitHref="https://github.com/dev-gasparz/portfolio"
-              position="toRight"
-            />
-            <Projects
-              title="Projeto número 1"
-              text="Desenvolvimento de uma loja virtual responsiva utilizando React e integração com VTEX. O foco do projeto foi a criação de uma interface fluida, com atenção especial a animações suaves e transições entre páginas. Incluí também um controle de carrinho com persistência de dados e um sistema de banners dinâmicos. O projeto destaca meu conhecimento em e-commerce e atenção aos detalhes de UI/UX."
-              gitHref="https://github.com/dev-gasparz/portfolio"
+              projectHref="https://portfolio-tau-kohl-37.vercel.app/"
               position="toLeft"
             />
           </div>
