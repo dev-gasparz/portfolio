@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import githubBlack from "../../../assets/images/logos/GitHub_Logo_black.png";
 import githubWhite from "../../../assets/images/logos/GitHub_Logo_White.png";
 
@@ -15,7 +15,7 @@ interface ProjectProps {
 const Projects: React.FC<ProjectProps> = (props: ProjectProps) => {
   return (
     <section className="project container">
-      <div className={`project-content ${props.position}`}>
+      <div className={`project-content ${props.position}`} data-aos="fade-up">
         <div className="project-img">
           <img src={props.imgUrl} alt="" />
         </div>

@@ -74,6 +74,11 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+
+  .bg-white {
+    background-color: #fff;
+    border-radius: 999px;
+  }
 }
 
 .dark-mode {

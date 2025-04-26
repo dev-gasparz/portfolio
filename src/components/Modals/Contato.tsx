@@ -2,8 +2,10 @@ import React from "react";
 import "./style.scss";
 import githubBlack from "../../assets/images/logos/GitHub_Logo_black.png";
 import githubWhite from "../../assets/images/logos/GitHub_Logo_White.png";
-import emailIcon from "../../assets/images/email.png";
-import linkedinIcon from "../../assets/images/linkedin.png";
+import emailBlack from "../../assets/images/email-black.png";
+import emailWhite from "../../assets/images/email-white.png";
+import linkedinBlack from "../../assets/images/linkedin-black.png";
+import linkedinWhite from "../../assets/images/linkedin-white.png";
 
 interface ContatoModalProps {
   isOpen: boolean;
@@ -27,11 +29,17 @@ const ContatoModal: React.FC<ContatoModalProps> = ({ isOpen, onClose }) => {
               <img className="icon-black" src={githubBlack} alt="" />
               <img className="icon-white" src={githubWhite} alt="" />
             </a>
-            <a href="mailto:gabrielgaspar0208@gmail.com">
-              <img className="icon-contato" src={emailIcon} alt="" />
+            <a className="bg-white" href="mailto:gabrielgaspar0208@gmail.com">
+              <img className="icon-black" src={emailBlack} alt="" />
+              <img className="icon-white" src={emailWhite} alt="" />
             </a>
-            <a href="https://www.linkedin.com/in/umgaspar/" target="_blank">
-              <img className="icon-contato" src={linkedinIcon} alt="" />
+            <a
+              className="bg-white"
+              href="https://www.linkedin.com/in/umgaspar/"
+              target="_blank"
+            >
+              <img className="icon-black" src={linkedinBlack} alt="" />
+              <img className="icon-white" src={linkedinWhite} alt="" />
             </a>
           </div>
         </div>

@@ -6,6 +6,27 @@
 @import "../styles/layout/_projects.scss";
 @import "../styles/layout/_footer.scss";
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Parte de trás da barra */
+::-webkit-scrollbar-track {
+  background: $dark-bg;
+  border-radius: 2px;
+}
+
+/* "Thumb" (o botão que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background-color: $purple-color;
+  border-radius: 4px;
+}
+
+/* Quando estiver passando o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: $purple-hover;
+}
+
 body {
   background-color: $light-bg;
   color: $light-text;

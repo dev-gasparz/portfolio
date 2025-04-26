@@ -13,7 +13,7 @@ const Stacks: React.FC = () => {
       <div className="stacks-content">
         <div className="stacks-left-content">
           <h2>Minhas stacks ✨</h2>
-          <div className="tech-badges">
+          <div className="tech-badges" data-aos="fade-right">
             {stacks.map((badge: stackBadges) => (
               <img
                 key={badge.title}
@@ -24,7 +24,7 @@ const Stacks: React.FC = () => {
             ))}
           </div>
         </div>
-        <img className="comet" src={comet} alt="" />
+        <img className="comet" src={comet} alt="" data-aos="fade-up" />
       </div>
     </section>
   );

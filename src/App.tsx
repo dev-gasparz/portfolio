@@ -6,6 +6,8 @@ import Stacks from "./components/layouts/Stacks";
 import Footer from "./components/layouts/footer";
 import Header from "./components/layouts/header";
 import ProjectWrap from "./components/layouts/Projects/ProjectWrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,6 +19,10 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, []);
+
   const toggleTheme = () => {
     setDarkMode((prevMode) => !prevMode);
     localStorage.setItem("theme", darkMode ? "light" : "dark");
@@ -26,7 +32,7 @@ function App() {
     <div className={darkMode ? "dark-mode" : "light-mode"}>
       <div className="app-container">
         <Header darkMode={darkMode} toggleTheme={toggleTheme} />
-        <section className="intro ">
+        <section className="intro" data-aos="fade-up">
           <div className="intro-content container">
             <div className="text-box">
               <h2 className="title">Olá, Eu sou o Gaspar.</h2>
@@ -45,7 +51,7 @@ function App() {
           <Stacks />
         </section>
 
-        <ProjectWrap />
+        <ProjectWrap data-aos="fade-up" />
         <Footer />
       </div>
     </div>
