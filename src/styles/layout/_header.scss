@@ -69,11 +69,15 @@ header {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease-in-out;
     box-shadow: none;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
+    border: 1px solid rgba(26, 26, 26, 0.6);
+    border-radius: 999px;
+
+    &:active {
+      transform: rotate(360deg);
+    }
 
     &:hover {
-      background-color: rgb(238 240 245 / 81%);
+      background-color: rgb(238 240 245 / 8%);
 
       svg {
         fill: #000 !important;
@@ -101,6 +105,7 @@ header {
     color: $dark-primary-text;
 
     .changeTheme {
+      border: 1px solid #e5e7eb;
       &:hover {
         background-color: #2d2f36cc;
       }
