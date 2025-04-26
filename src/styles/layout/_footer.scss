@@ -2,10 +2,10 @@
   height: 20vh;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: $light-text;
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 120%;
     font-weight: 600;
   }
@@ -28,7 +28,7 @@
     background-color: #1e1e1e;
 
     p {
-      color: #fff;
+      color: $light-text;
     }
   }
 }

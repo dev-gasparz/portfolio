@@ -1,5 +1,5 @@
 header {
-  background-color: $header-bg;
+  background-color: $light-bg;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -40,9 +40,9 @@ header {
     }
 
     .menu-link {
-      line-height: 24px;
+      line-height: 1.5rem;
       font-weight: 700;
-      color: $dark-primary-bg;
+      color: $dark-bg;
       text-decoration: none;
       background-color: transparent;
       border: none;
@@ -93,7 +93,7 @@ header {
 
       svg:hover {
         transform: scale(1.04);
-        fill: #fff;
+        fill: $light-text;
       }
     }
   }
@@ -101,8 +101,8 @@ header {
 
 .dark-mode {
   header {
-    background-color: $dark-primary-bg;
-    color: $dark-primary-text;
+    background-color: $dark-bg;
+    color: $dark-text;
 
     .changeTheme {
       border: 1px solid #e5e7eb;
@@ -114,11 +114,11 @@ header {
 
   .menu-links {
     button {
-      color: $dark-primary-text;
+      color: $dark-text;
     }
 
     .menu-link {
-      color: $primary-bg;
+      color: $light-bg;
     }
   }
 }

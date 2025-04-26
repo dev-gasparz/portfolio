@@ -7,8 +7,8 @@
 @import "../styles/layout/_footer.scss";
 
 body {
-  background-color: $primary-bg;
-  color: $primary-text;
+  background-color: $light-bg;
+  color: $light-text;
   font-family: "Inter", sans-serif;
   transition: background-color 0.3s, color 0.3s;
   margin: 0px;
@@ -16,10 +16,9 @@ body {
   box-shadow: none;
 
   h2,
-  h3 {
-    font-family: system-ui, sans-serif !important;
-  }
-
+  h3,
+  a,
+  button,
   p {
     font-family: system-ui, sans-serif !important;
   }
@@ -30,7 +29,7 @@ body {
 }
 
 a {
-  color: $primary-link;
+  color: $light-text;
   transition: color 0.3s;
 }
 
@@ -67,29 +66,29 @@ a {
     font-size: 1.6rem;
     line-height: 35px;
     letter-spacing: 2.5px;
+    margin: 0px;
   }
 }
 
 .title {
-  font-family: "Roboto", sans-serif;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   color: #1a1a1a;
   margin-top: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
 }
 
 // Tema Escuro
 
 .dark-mode {
   .app-container {
-    background-color: $dark-primary-bg;
-    color: $dark-primary-text;
+    background-color: $dark-bg;
+    color: $dark-text;
   }
 
   .title {
-    color: #fff;
+    color: $light-text;
   }
 
   .intro {

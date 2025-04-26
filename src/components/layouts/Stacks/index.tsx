@@ -1,5 +1,5 @@
 import React from "react";
-import stacks from "../../../assets/images/stacks-badges.json";
+import stacks from "../../../assets/stacks/stacks-badges.json";
 import comet from "../../../assets/images/comet.png";
 
 type stackBadges = {

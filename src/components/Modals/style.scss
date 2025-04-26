@@ -13,7 +13,7 @@
 }
 
 .modal-content {
-  background-color: $primary-bg;
+  background-color: $light-bg;
   padding: 20px;
   border-radius: 8px;
   max-width: 360px;
@@ -34,14 +34,14 @@
   right: 10px;
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 1.25rem;
   cursor: pointer;
   color: $dark-text;
 }
 
 .dark-mode {
   .modal-content {
-    background-color: $dark-primary-bg;
+    background-color: $dark-bg;
 
     h2,
     p {

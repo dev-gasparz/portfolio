@@ -1,6 +1,6 @@
 import React from "react";
 import Projects from ".";
-import projetoPortf from "./assets/images/projeto-portfolio.png";
+import projetoPortf from "../../../assets/images/projeto-portfolio.png";
 
 const ProjectWrap: React.FC = () => {
   return (

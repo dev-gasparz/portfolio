@@ -1,8 +1,7 @@
 .project {
-  background-color: $primary-bg;
+  background-color: $light-bg;
   display: flex;
   justify-content: center;
-  margin-top: 1rem !important;
   width: 100%;
 
   &:hover .project-img::after {
@@ -12,7 +11,7 @@
 
 .project-content {
   display: flex;
-  gap: 30px;
+  gap: 32px;
   align-items: center;
   width: 100%;
 }
@@ -96,7 +95,7 @@
   border: 1px solid #8159f4;
   background-color: #8159f4;
 
-  color: #fff;
+  color: $light-text;
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
@@ -153,14 +152,13 @@
 
   h2 {
     font-family: "Roboto", sans-serif;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 120%;
     font-weight: 700;
     color: #1a1a1a;
     margin-top: 0px;
-    margin-bottom: 16px;
     max-width: 1440px;
-    margin: 0px auto 16px auto;
+    margin: 0px auto 24px auto;
     text-align: initial;
     width: 100%;
   }
@@ -168,13 +166,10 @@
 
 @media screen and (min-width: 992px) {
   .project {
-    grid-template-columns: repeat(12, 1fr);
     align-items: center;
   }
 
   .project-img {
-    grid-column: 1 / span 8;
-    grid-row: 1 / 1;
     border-radius: 8px;
     box-shadow: 0 5px 15px #0003;
   }
@@ -187,15 +182,15 @@
 
 .dark-mode {
   .projects {
-    background-color: $dark-primary-bg;
-    color: $dark-primary-text;
+    background-color: $dark-bg;
+    color: $dark-text;
 
     .project {
-      background-color: $dark-primary-bg;
+      background-color: $dark-bg;
     }
 
     h2 {
-      color: #fff;
+      color: $light-text;
     }
 
     .project-info {
@@ -213,7 +208,7 @@
       .project-desc,
       .project-slug,
       h3 {
-        color: #fff;
+        color: $light-text;
       }
     }
   }
