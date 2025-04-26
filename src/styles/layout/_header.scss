@@ -4,13 +4,36 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0px auto;
 
   .menuLinks {
     display: flex;
     gap: 40px;
     margin-right: 40px;
+
+    a,
+    button {
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #8159f4;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
 
     a {
       letter-spacing: 2px;
@@ -91,6 +114,15 @@ header {
 
     .menu-link {
       color: $primary-bg;
+    }
+  }
+
+  .menuLinks {
+    a,
+    button {
+      &::after {
+        background-color: #ff8f00;
+      }
     }
   }
 }

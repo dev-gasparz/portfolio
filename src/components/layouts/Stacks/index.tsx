@@ -1,6 +1,6 @@
 import React from "react";
-import stacks from "../../assets/images/stacks-badges.json";
-import comet from "../../assets/images/comet.png";
+import stacks from "../../../assets/images/stacks-badges.json";
+import comet from "../../../assets/images/comet.png";
 
 type stackBadges = {
   title: string;
@@ -12,7 +12,7 @@ const Stacks: React.FC = () => {
     <section className="stacks container">
       <div className="stacks-content">
         <div className="stacks-left-content">
-          <h2>Minhas stacks</h2>
+          <h2>Minhas stacks ✨</h2>
           <div className="tech-badges">
             {stacks.map((badge: stackBadges) => (
               <img
