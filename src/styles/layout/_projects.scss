@@ -227,3 +227,32 @@
     }
   }
 }
+
+@media screen and (max-width: 1460px) {
+  .projects {
+    padding: 0px 1.25rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project-content {
+    flex-direction: column !important;
+    gap: 0.25rem;
+
+    .project-img {
+      max-width: 800px;
+    }
+
+    .project-info {
+      max-width: 800px;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-gap {
+    gap: 40px;
+  }
+}

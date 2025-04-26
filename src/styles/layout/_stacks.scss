@@ -56,3 +56,32 @@
     color: $light-text;
   }
 }
+
+@media screen and (max-width: 1460px) {
+  .stacks {
+    padding: 0px 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stacks-content {
+    flex-direction: column;
+    gap: 32px;
+
+    .tech-badges {
+      justify-content: center;
+    }
+  }
+
+  .comet {
+    max-width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tech-badges {
+    img {
+      height: 28px !important;
+    }
+  }
+}

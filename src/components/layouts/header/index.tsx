@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleTheme }) => {
   return (
     <header>
       <div className="menuLinks">
-        <UiLink link="www.google.com" text="Sobre mim" target="_blank" />
+        <UiLink link="www.google.com" text="Stacks" target="_blank" />
         <UiLink link="www.google.com" text="Projetos" target="_blank" />
         <button className="menu-link" onClick={() => setIsModalOpen(true)}>
           Contato

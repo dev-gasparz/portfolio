@@ -122,3 +122,18 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  header {
+    justify-content: center;
+    padding: 0px 1rem;
+  }
+  .menuLinks {
+    gap: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .changeTheme {
+    margin-right: 0px !important;
+  }
+}

@@ -63,16 +63,16 @@ a {
   }
 
   p {
-    font-size: 1.6rem;
-    line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     letter-spacing: 2.5px;
     margin: 0px;
   }
 }
 
 .title {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 4rem;
+  line-height: 120%;
   font-weight: 700;
   color: #1a1a1a;
   margin-top: 0px;
@@ -93,5 +93,70 @@ a {
 
   .intro {
     background-image: url("../assets/images/background-dark.png");
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .text-box {
+    max-width: 640px;
+
+    .title {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .intro-content {
+    div:last-child {
+      display: none;
+
+      canvas {
+        display: none;
+      }
+    }
+
+    .text-box {
+      max-width: 800px;
+      text-align: center;
+      margin: 0px auto;
+      padding: 0px 1.25rem;
+
+      .title {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stacks.container {
+    padding: 5rem 0px;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  .title {
+    margin-bottom: 1rem !important;
   }
 }
