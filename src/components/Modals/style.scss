@@ -16,11 +16,16 @@
   background-color: $light-bg;
   padding: 20px;
   border-radius: 8px;
-  max-width: 360px;
-  height: 400px;
+  max-width: 320px;
+  height: 290px;
   width: 100%;
   text-align: center;
   position: relative;
+
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
   h2,
   p {
@@ -39,6 +44,38 @@
   color: $dark-text;
 }
 
+.icon-contato {
+  max-width: 40px;
+}
+
+.icon-black {
+  display: flex;
+  max-width: 40px;
+}
+
+.icon-white {
+  display: none;
+  max-width: 40px;
+}
+
+.contato-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+
+  p {
+    margin: 0px;
+  }
+}
+
+.contato-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .dark-mode {
   .modal-content {
     background-color: $dark-bg;
@@ -55,5 +92,13 @@
 
   .menu-link {
     color: $light-text !important;
+  }
+
+  .icon-black {
+    display: none;
+  }
+
+  .icon-white {
+    display: flex;
   }
 }
