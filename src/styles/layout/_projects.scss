@@ -27,12 +27,12 @@
 }
 
 .project-img {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   display: inline-block;
   overflow: hidden;
   transition: all 0.3s linear;
   max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #0003;
 
   img {
     width: 100%;
@@ -49,8 +49,8 @@
   width: 100%;
   background: var(--clr-white);
   padding: 2rem;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #0003;
 }
 
 .project-slug {
@@ -165,11 +165,6 @@
 @media screen and (min-width: 992px) {
   .project {
     align-items: center;
-  }
-
-  .project-img {
-    border-radius: 8px;
-    box-shadow: 0 5px 15px #0003;
   }
 
   .project-info {
