@@ -9,7 +9,7 @@ type stackBadges = {
 
 const Stacks: React.FC = () => {
   return (
-    <section className="stacks container">
+    <section className="stacks container" id="stacks">
       <div className="stacks-content">
         <div className="stacks-left-content">
           <h2>Minhas stacks ✨</h2>

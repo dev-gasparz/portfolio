@@ -17,7 +17,11 @@ const ContatoModal: React.FC<ContatoModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="modal-content"
+        onClick={(e) => e.stopPropagation()}
+        data-aos="zoom-in"
+      >
         <button className="close-button" onClick={onClose}>
           ✖
         </button>

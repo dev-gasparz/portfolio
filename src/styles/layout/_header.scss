@@ -123,6 +123,30 @@ header {
   }
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 120px;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-left-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-content {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 480px) {
   header {
     justify-content: center;
