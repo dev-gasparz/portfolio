@@ -2,6 +2,7 @@ import React from "react";
 import Projects from ".";
 import projetoPortf from "../../../assets/images/projeto-portfolio.png";
 import projetoFintech from "../../../assets/images/fintech.png";
+import projetoDevToDev from "../../../assets/images/dev-to-dev.png";
 
 const ProjectWrap: React.FC = () => {
   return (
@@ -25,6 +26,16 @@ const ProjectWrap: React.FC = () => {
           projectHref="https://fintech-phi-six.vercel.app/"
           position="toRight"
           stack={["React", "TypeScript", "Vite", "Recharts"]}
+        />
+
+        <Projects
+          imgUrl={projetoDevToDev}
+          title="Dev To Dev tools"
+          text="Projeto desenvolvido com React, TypeScript e Firebase, trazendo um dashboard com várias ferramentas úteis para devs em um só lugar. A autenticação foi toda estruturada com o Context do react, garantindo controle global de estado do usuário. As rotas são gerenciadas com React Router dom, deixando tudo mais fluido e fácil de navegar."
+          gitHref="https://github.com/dev-gasparz/dev-to-dev"
+          projectHref="https://dev-to-dev.vercel.app/"
+          position="toLeft"
+          stack={["React", "TypeScript", "Firebase", "router-dom"]}
         />
       </div>
     </section>
